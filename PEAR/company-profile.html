@@ -1,0 +1,75 @@
+﻿<html>
+  <head>
+    <title>Company Dashboard – Profile Management</title>
+    <link rel="stylesheet" href="home-style.css" />
+    <link rel="stylesheet" href="company-student-style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="dashboard-wrapper">
+      <aside class="sidebar">
+        <div class="sidebar-title">Dashboard</div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="company-dashboard.html">Dashboard</a></li>
+            <li><a href="company-internship.html">Internship Offers</a></li>
+            <li><a href="company-application.html">Manage All Applications</a></li>
+            <li><a href="company-profile.html" class="active">Profile Management</a></li>
+          </ul>
+        </nav>
+        <div class="logout_">
+          <button class="logout-button">Logout</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="header-section">
+          <h1 class="main-title">Profile Management</h1>
+        </header>
+
+        <section class="form-section profile">
+          <h2 class="form-title">Edit Company Profile</h2>
+          <form class="form-grid">
+            <div>
+              <label for="companyName" class="form-label">Company Name</label>
+              <input type="text" id="companyName" name="companyName" class="form-input" value="InnovateTech Solutions"/>
+            </div>
+            <div>
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" value="info@innovatetech.com" />
+            </div>
+            <div class="form-full-width">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" id="address" name="address" class="form-input" value="123 Tech Park, Silicon Valley, CA 94043" />
+            </div>
+            <div class="form-full-width form-actions">
+              <button type="submit" class="form-button">Save Profile</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="form-section password" style="background-color: var(--card-pastel-green);">
+          <h2 class="form-title">Change Password</h2>
+          <form class="form-grid">
+            <div>
+              <label for="currentPassword" class="form-label">Current Password</label>
+              <input type="password" id="currentPassword" name="currentPassword" class="form-input" />
+            </div>
+            <div>
+              <label for="newPassword" class="form-label">New Password</label>
+              <input type="password" id="newPassword" name="newPassword" class="form-input" />
+            </div>
+            <div>
+              <label for="confirmPassword" class="form-label">Confirm New Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" class="form-input" />
+            </div>
+            <div class="form-full-width form-actions">
+              <button type="submit" class="form-button">Change Password</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="company-profile-java.js"></script>
+  </body>
+</html>

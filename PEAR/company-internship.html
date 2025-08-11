@@ -1,0 +1,92 @@
+﻿<html>
+  <head>
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="company-student-style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-title">Dashboard</div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="company-dashboard.html">Dashboard</a></li>
+          <li><a href="company-internship.html"class="active">Internship Offers</a></li>
+          <li><a href="company-application.html">Manage All Applications</a></li>
+          <li><a href="company-profile.html">Profile Management</a></li>
+        </ul>
+      </nav>
+      <div class="logout_">
+        <button class="logout-button">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="header-section">
+        <h1 class="main-title">Create a New Internship Offer</h1>
+      </header>
+
+      <section class="form-section">
+        <h2 class="form-title">Fill out the details</h2>
+        <form class="form-grid">
+          <div>
+            <label for="title" class="form-label">Internship Title</label>
+            <input type="text" id="title" name="title" class="form-input" placeholder="e.g. Software Engineering Intern"/>
+          </div>
+          <div class="form-full-width">
+            <label for="description" class="form-label">Description</label>
+            <textarea id="description" name="description" rows="5" class="form-textarea" placeholder="Provide a detailed description of the internship, responsibilities, and requirements."></textarea>
+          </div>
+          <div>
+            <label for="duration" class="form-label">Duration (Months)</label>
+            <input type="number" id="duration"name="duration"class="form-input"placeholder="e.g. 3, 6"/>
+          </div>
+          <div>
+            <label for="location" class="form-label">Location</label>
+            <select id="location" name="location" class="form-input" required>
+              <option value="">Select location</option>
+              <option value="remote">Remote</option>
+              <option value="onsite">On-site</option>
+              <option value="hybrid">Hybrid</option>
+          </select>
+          </div>
+
+          <div>
+            <label for="category" class="form-label">Category</label>
+            <select id="category" name="category" class="form-input" required>
+              <option value="">Select a category</option>
+              <option value="tech">Tech</option>
+              <option value="marketing">Marketing</option>
+              <option value="finance">Finance</option>
+              <option value="design">Design</option>
+              <option value="web">Web Development</option>
+              <option value="ml">Machine Learning</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="paid" class="form-label">Payment</label>
+            <select id="paid" name="paid" class="form-input" required>
+              <option value="">Select payment status</option>
+              <option value="paid">Paid</option>
+              <option value="unpaid">Unpaid</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="type" class="form-label">Type</label>
+            <select id="type" name="type" class="form-input" required>
+              <option value="">Select internship type</option>
+              <option value="fulltime">Full-time</option>
+              <option value="parttime">Part-time</option>
+            </select>
+          </div>
+
+          <div class="form-full-width form-actions">
+            <button type="submit" class="form-button">Create Offer</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="company-internship-java.js"></script>
+  </body>
+</html>

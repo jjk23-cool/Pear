@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Student Dashboard – My Applications</title>
+    <link rel="stylesheet" href="home-style.css" />
+    <link rel="stylesheet" href="company-student-style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="dashboard-wrapper">
+      <aside class="sidebar">
+        <div class="sidebar-title">Dashboard</div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li class="mb-4">
+              <a href="student-dashboard.html">Dashboard</a>
+            </li>
+            <li class="mb-4">
+              <a href="student-application.html" class="active">My Applications</a>
+            </li>
+            <li class="mb-4">
+              <a href="student-profile.html">Profile Management</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="logout_">
+          <button class="logout-button">Logout</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="header-section">
+          <h1 class="main-title">My Applications</h1>
+        </header>
+        <section class="form-section-applications">
+          <div class="table-container">
+            <table class="data-table">
+              <thead class="table-header">
+                <tr>
+                  <th>Internship Title</th>
+                  <th>Company</th>
+                  <th>Status</th>
+                  <th>Date Applied</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="student-application-java.js"></script>
+  </body>
+</html>

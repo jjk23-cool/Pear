@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Company Dashboard – Manage Applications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="company-student-style.css" />
+  </head>
+  <body>
+    <div class="dashboard-wrapper">
+      <aside class="sidebar">
+        <div class="sidebar-title">Dashboard</div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="company-dashboard.html">Dashboard</a></li>
+            <li><a href="company-internship.html">Internship Offers</a></li>
+            <li><a href="company-application.html" class="active">Manage All Applications</a></li>
+            <li><a href="company-profile.html">Profile Management</a></li>
+          </ul>
+        </nav>
+        <div style="margin-top: auto;">
+          <button class="logout-button">Logout</button>
+        </div>
+      </aside>
+      <!-- ========== MAIN CONTENT ========== -->
+      <main class="main-content applications-page">
+        <!-- Header Section -->
+        <div class="header-section">
+          <h1 class="main-title">Manage All Applications</h1>
+        </div>
+        <!-- Search Bar -->
+        <input type="text" id="searchStudent" class="search-input" placeholder="Search by student name" />
+        <!-- Applications Table Container -->
+        <div class="table-container">
+          <table class="data-table">
+            <thead class="table-header">
+              <tr>
+                <th>Internship</th>
+                <th>Student</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Date</th>
+                <th>CV</th>
+                <th>Status</th> 
+                <th>Update</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr><td colspan="6">Loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="company-application-java.js"></script>
+  </body>
+</html>

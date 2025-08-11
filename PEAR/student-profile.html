@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Student Dashboard – Profile Management</title>
+    <link rel="stylesheet" href="home-style.css" />
+    <link rel="stylesheet" href="company-student-style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="dashboard-wrapper">
+      <aside class="sidebar">
+        <div class="sidebar-title">Dashboard</div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="student-dashboard.html">Dashboard</a></li>
+            <li><a href="student-application.html">My Applications</a></li>
+            <li><a href="student-profile.html" class="active">Profile Management</a></li>
+          </ul>
+        </nav>
+        <div class="logout_">
+          <button class="logout-button">Logout</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="header-section">
+          <h1 class="main-title">Profile Management</h1>
+          <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+          </div>
+        </header>
+
+        <section class="form-section profile" style="background-color: var(--card-pastel-blue);">
+          <h2 class="form-title">Edit Student Profile</h2>
+          <form id="profileForm" class="form-grid">
+            <div>
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" />
+            </div>
+            <div>
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" disabled />
+            </div>
+            <div>
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input" />
+            </div>
+            <div>
+              <label for="major" class="form-label">Major</label>
+              <input type="text" id="major" name="major" class="form-input" />
+            </div>
+            <div>
+              <label for="university" class="form-label">University</label>
+              <input type="text" id="university" name="university" class="form-input" />
+            </div>
+            <div>
+              <label for="dob" class="form-label">Date of Birth</label>
+              <input type="date" id="dob" name="dob" class="form-input" />
+            </div>
+            <div class="form-full-width form-actions">
+              <button type="submit" class="form-button">Save Profile</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="form-section password" style="background-color: var(--card-pastel-green); margin-top: 2rem;">
+          <h2 class="form-title">Change Password</h2>
+          <form id="passwordForm" class="form-grid">
+            <div>
+              <label for="currentPassword" class="form-label">Current Password</label>
+              <input type="password" id="currentPassword" name="currentPassword" class="form-input" required />
+            </div>
+            <div>
+              <label for="newPassword" class="form-label">New Password</label>
+              <input type="password" id="newPassword" name="newPassword" class="form-input" required />
+            </div>
+            <div>
+              <label for="confirmPassword" class="form-label">Confirm New Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" class="form-input" required />
+            </div>
+            <div class="form-full-width form-actions">
+              <button type="submit" class="form-button">Change Password</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="student-profile-java.js"></script>
+  </body>
+</html>

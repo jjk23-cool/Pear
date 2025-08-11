@@ -1,0 +1,39 @@
+<html>
+  <head>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link href="student-forms-style.css" rel="stylesheet">
+      <title>STUDENT FORM</title>
+  </head>
+  <body> 
+    <main>
+        <form class="form" id="applicationForm" enctype="multipart/form-data">
+            <span class="title">Apply for an internship</span>
+            <label for="fullname" class="label">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" class="input" required="" >
+            
+            <label for="email" class="label">Email:</label>
+            <input type="email" id="email" class="input" disabled />
+            
+            <label for="phone" class="label">Phone:</label>
+            <input type="text" id="phone" name="phone" pattern="^\\+?[0-9\\s-()]{7,20}$" title="Format: +1 (123) 456-7890 or 050 1234567" required="" class="input" >
+            
+            <label class="label file-upload-label">Upload your CV here:</label>
+            
+            <div class="file-upload-container">
+                <div class="file-upload">
+                    <input type="file" id="fileInput" name="cv" accept=".pdf,.doc,.docx" required class="file-input" />
+                    <label class="file-label" for="fileInput"> 
+                        <p>Drag & Drop your files or <span>Browse</span></p>
+                    </label>
+                </div>
+            </div>
+            <label for="coverLetter" class="label">Cover Letter (Optional):</label>
+            <textarea id="coverLetter" name="coverLetter" rows="6" class="input"></textarea>
+            
+            <button type="submit" class="submit">Submit </button>
+        </form>
+    </main>
+    <script src="student-internship-form-java.js"></script>
+</body>
+</html>

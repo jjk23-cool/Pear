@@ -1,0 +1,150 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0f2f7; /* pastel blue */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+body.company-bg {
+  background: #e7f5e9; /* pastel green for company login */
+}
+
+/* CARD CONTAINER */
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 410px;
+  padding: 40px 32px;
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.11);
+  text-align: center;
+}
+
+/* TOGGLE BUTTONS (Student / Company) */
+.login-signup-toggle {
+  display: flex;
+  background: #f0f0f0;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 14px 0;
+  border: none;
+  background: transparent;
+  color: #555;
+  font-weight: 600;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  outline: none;
+}
+
+.toggle-btn.active,
+.toggle-btn:disabled {
+  background: #333;
+  color: #fff;
+  cursor: default;
+}
+
+.toggle-btn:not(.active):hover {
+  background: #e0e0e0;
+}
+
+/* HEADING & SUBTEXT */
+.container h2 {
+  font-size: 2.3em;
+  margin-bottom: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.welcome-back {
+  font-size: 1.09em;
+  color: #666;
+  margin-bottom: 28px;
+}
+
+/* INPUT FIELDS */
+.input-group {
+  margin-bottom: 22px;
+  text-align: left;
+}
+.input-group input {
+  width: 100%;
+  padding: 13px 18px;
+  border: 1.5px solid #e3e3e3;
+  border-radius: 9px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+  background: #fafbfc;
+  color: #222;
+  outline: none;
+}
+.input-group input:focus {
+  border-color: #E0A3BB; /* soft pink */
+}
+
+/* SHOW/HIDE PASSWORD ICON SLOT */
+.input-group .password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+.input-group .password-toggle:hover {
+  opacity: 1;
+}
+
+/* SUBMIT BUTTON */
+.submit-button {
+  width: 100%;
+  padding: 15px 0;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.15em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.submit-button:hover {
+  background: #97A13B; /* moss green */
+} 
+/* SIGNUP/LOGIN LINK */
+.form-switch-link {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #777;
+}
+.form-switch-link a {
+  color: #E0A3BB; /* pink */
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 4px;
+}
+.form-switch-link a:hover {
+  text-decoration: underline;
+}

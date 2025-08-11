@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Company Login</title>
+  <link rel="stylesheet" href="login-signup-style.css">
+</head>
+<body class="company-bg">
+  <div class="container">
+    <div class="login-signup-toggle">
+        <button class="toggle-btn" type="button" onclick="window.location.href='student-login.html'">Student</button>
+        <button class="toggle-btn active" type="button" disabled>Company</button>
+    </div>
+    <h2>Welcome back!</h2>
+    <form id="login-form">
+      <div class="input-group">
+          <input type="email" id="email" placeholder="Enter email address" required>
+      </div>
+      <div class="input-group password-group">
+          <input type="password" id="password" placeholder="Password" required>
+          <span class="password-toggle"></span>
+      </div>
+      <button type="submit" class="submit-button">Log In</button>
+    </form>
+    <div class="form-switch-link">
+      Don’t have an account? <a href="company-signup.html">Sign Up</a>
+    </div>
+  </div>
+  
+  <script src="company-login-java.js"></script>
+</body>
+</html>

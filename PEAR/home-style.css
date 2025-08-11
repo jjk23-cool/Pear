@@ -1,0 +1,180 @@
+/* 1) GLOBAL RESET & VARIABLES */
+:root {
+  /* Text & border colors */
+  --text-dark:   #333;
+  --text-med:    #666;
+  --border-light:#ddd;
+
+  /* Accent & background tones */
+  --accent:      #007bff;
+  --bg-page:     #f8f8f8;
+  --bg-hero:     #d3eac0;
+  --moss:        #97A13B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  background: var(--bg-page);
+  overflow-x: hidden;
+}
+
+/* 2) NAVBAR */
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: var(--text-dark);
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: var(--btn-pink);
+}
+.login-button {
+  background: var(--text-dark);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.login-button:hover {
+  background: var(--moss);
+}
+
+/* 3) HERO SECTION */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 5%;
+  background: var(--bg-hero);
+  gap: 50px;
+}
+.hero-content {
+  max-width: 50%;
+  flex: 0 0 550px;
+}
+.hero-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+.hero-content p {
+  font-size: 1.1em;
+  color: var(--text-med);
+  margin-bottom: 30px;
+}
+.hero-image-container {
+  flex: 0 0 400px;
+  display: flex;
+  justify-content: center;
+}
+.hero-image {
+  width: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*about section*/
+.about-section {
+  padding: 2% 5% 20px; 
+}
+
+.about-text-only {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; /* center all text in this section */
+}
+
+.about-text-only h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.about-text-only p {
+  font-size: 1.1em;
+  color: var(--text-medium);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Subheading for companies */
+.about-text-only h3 {
+  margin-top: 0;             /* kill any extra top-spacing on the heading */
+  margin-bottom: 20px;       /* keep a little space below, if you like */
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center; /* center the row */
+  align-items: center;     /* vertically align, if they have varying heights */
+  gap: 30px;               /* space between each logo */
+  flex-wrap: nowrap;       /* prevent wrapping onto a second line */
+  overflow-x: auto;        /* if the browser window is too narrow, allow horizontal scroll */
+  padding: 10px 0;         /* optional vertical padding */
+}
+
+.company-logo {
+  max-width: 120px; 
+  height: auto;
+  opacity: 0.85;
+  transition: opacity 0.3s, transform 0.3s;
+}
+/*Footer*/
+.site-footer {
+    background-color: #e0fbe2;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    border-top: 2px solid #b2dfb2;
+}
+
+.site-footer a {
+    color: #2d7f2d;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.site-footer .copyright {
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9em;
+}

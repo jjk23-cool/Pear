@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+  <title>Company Dashboard</title>
+  <link rel="stylesheet" href="home-style.css" />
+  <link rel="stylesheet" href="company-student-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="dashboard-wrapper">
+    <aside class="sidebar">
+      <div class="sidebar-title">Dashboard</div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="company-dashboard.html" class="active">Dashboard</a></li>
+          <li><a href="company-internship.html">Internship Offers</a></li>
+          <li><a href="company-application.html">Manage All Applications</a></li>
+          <li><a href="company-profile.html">Profile Management</a></li>
+        </ul>
+      </nav>
+
+      <div class= "logout_">
+        <button class="logout-button">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="header-section">
+        <h1 class="main-title">Welcome to Your Dashboard!</h1>
+      </header>
+
+      <section class="form-section" style="background-color: var(--card-pastel-orange);">
+        <h2 class="form-title">Manage Existing Internship Offers</h2>
+        <div class="table-container">
+          <table class="data-table">
+            <thead class="table-header">
+              <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Duration</th>
+                <th>Location</th>
+                <th>Category</th>
+                <th>Paid</th>
+                <th>Type</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody id="internship-tbody" class="table-body">
+              <!-- Internship rows will be inserted here dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="company-dashboard-java.js"></script> 
+</body>
+</html>

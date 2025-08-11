@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Company Sign Up</title>
+  <link rel="stylesheet" href="login-signup-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="company-bg">
+  <div class="container">
+    <div class="login-signup-toggle">
+      <button class="toggle-btn" type="button" onclick="window.location.href='student-signup.html'">Student</button>
+      <button class="toggle-btn active" type="button" disabled>Company</button>
+    </div>
+    
+    <h2>Create Company Account</h2>
+    <p class="welcome-back">Join us and hire the best talents!</p>
+    <form id="company-signup-form">
+      <div class="input-group">
+        <input type="text" id="companyName" placeholder="Company Name" required>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Email Address" required>
+      </div>
+      <div class="input-group">
+        <input type="text" id="address" placeholder="Address" required>
+      </div>
+      <div class="input-group">
+        <input type="tel" id="phone" placeholder="Phone Number">
+      </div>
+      <div class="input-group password-group">
+        <input type="password" id="password" placeholder="Password" required>
+        <span class="password-toggle"></span>
+      </div>
+      <button type="submit" class="submit-button">Sign Up</button>
+      <p class="form-switch-link">Already a member? <a href="company-login.html">Login now</a></p>
+    </form>
+
+  </div>
+  <script src ="company-signup-java.js"></script>
+</body>
+</html>

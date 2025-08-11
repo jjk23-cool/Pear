@@ -1,0 +1,123 @@
+/* Main Form Styles */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #d3eac0;
+  min-height: calc(100vh - 60px);
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.form .title {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1em;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #05803a;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(5, 128, 58, 0.15);
+}
+
+/* File Upload Specific Styles */
+.file-upload-label {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.file-upload-container {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border: 2px dashed #e0e0e0;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.file-upload-container:hover {
+  border-color: #05803a;
+  background-color: #f0fdf4;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  cursor: pointer;
+  display: block;
+  padding: 10px 0;
+  color: #555;
+  font-size: 1em;
+}
+
+.file-upload p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #6c757d;
+}
+.file-upload p span {
+  color: #05803a;
+  font-weight: 600;
+}
+.file-upload-container.dragover {
+  background-color: #e0f8e0;
+  border-color: #04662d;
+}
+/* Submit Button Styles */
+.submit {
+  display: block;
+  background-color: #0f5d31;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  width: 150px;
+  height: 45px;
+  padding: 10px 25px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 30px auto 0;
+  letter-spacing: 0.5px;
+}
+
+.submit:hover {
+  background-color: #04662d;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

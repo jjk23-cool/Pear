@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Student Sign Up</title>
+    <link rel="stylesheet" href="login-signup-style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="student-bg">
+    <div class="container">
+      <div class="login-signup-toggle">
+        <button class="toggle-btn active" type="button" disabled>Student</button>
+        <button class="toggle-btn" type="button" onclick="window.location.href='company-signup.html'">Company</button>
+      </div>
+      <h2>Create Student Account</h2>
+      <p class="welcome-back">Join us and explore opportunities!</p>
+      <form>
+        <div class="input-group">
+          <input id="name" type="text" placeholder="First Name" required>
+        </div>
+        <div class="input-group">
+          <input id="lastname" type="text" placeholder="Last Name" required>
+        </div>
+        <div class="input-group">
+          <input id="email" type="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-group">
+          <input id="phone" type="tel" placeholder="Phone Number">
+        </div>
+        <div class="input-group">
+          <input id="major" type="text" placeholder="Major">
+        </div>
+        <div class="input-group">
+          <input id="university" type="text" placeholder="University">
+        </div>
+        <div class="input-group">
+          <input id="dob" type="date" placeholder="Date of Birth">
+        </div>
+        <div class="input-group password-group">
+          <input id="password" type="password" placeholder="Password" required>
+          <span class="password-toggle"></span>
+        </div>
+
+        <!-- Hidden role input for backend -->
+        <input type="hidden" id="role" value="student" />
+        <button type="submit" class="submit-button">Sign Up</button>
+        <p class="form-switch-link">Already a member? <a href="student-login.html">Login now</a></p>
+      </form>
+    </div>
+    <script src="student-signup-java.js"></script>
+  </body>
+</html>
